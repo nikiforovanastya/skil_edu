@@ -15,8 +15,7 @@ public class Lesson1 {
 
         if (fuelType == 92) {
             fuelPrice = fuel92price;
-        }
-        else if (fuelType == 95) {
+        } else if (fuelType == 95) {
             fuelPrice = fuel95price;
         } else {
             System.out.println("Указан неверный тип топлива!");
@@ -27,7 +26,7 @@ public class Lesson1 {
             amount = 0;
         }
 
-        if (amount > maxAmount){
+        if (amount > maxAmount) {
             System.out.println("Указанное количество топлива превышает максимально допустимое!");
             System.out.println("Будет продано " + maxAmount + " литров!");
             amount = maxAmount;
