@@ -39,6 +39,5 @@ public class Lesson1 {
         System.out.println("Общая стоимость заправки: " + totalPrice + " руб.");
 
 
-
     }
 }
