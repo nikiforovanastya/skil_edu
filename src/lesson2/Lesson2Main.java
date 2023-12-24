@@ -2,14 +2,15 @@ package lesson2;
 
 public class Lesson2Main {
     public static void main(String[] args) {
-        int vasyaAge = 0;
-        int katyaAge = 0;
-        int mishaAge = 0;
+        int vasyaAge = 10;
+        int katyaAge = 50;
+        int mishaAge = 100;
 
         int min = -1; // минимальный возраст
         int middle = -1; // средний возраст
         int max = -1; // максимальный возраст
 
+        // todo add tests
         if ((vasyaAge >= katyaAge) && (katyaAge >= mishaAge)) {
             max = vasyaAge;
             middle = katyaAge;
@@ -30,7 +31,8 @@ public class Lesson2Main {
             max = mishaAge;
             middle = vasyaAge;
             min = katyaAge;
-        } else if ((mishaAge >= katyaAge) && (katyaAge >= vasyaAge)) {
+        }
+        else {
             max = mishaAge;
             middle = katyaAge;
             min = vasyaAge;
@@ -39,7 +41,5 @@ public class Lesson2Main {
         System.out.println("Minimal age: " + min);
         System.out.println("Middle age: " + middle);
         System.out.println("Maximum age: " + max);
-
-
     }
 }
